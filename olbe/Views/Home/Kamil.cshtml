@@ -1,0 +1,34 @@
+﻿<!--@using Microsoft.AspNetCore.Http
+@{
+
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    string fullname = Context.Session.GetString("fullname");
+}
+<div>
+
+    @ViewBag.userMail
+    <input id="kml2" type="hidden" value="@ViewBag.userMail" />
+
+    <button id="kml" type="button">
+    </button>
+</div>-->
+
+
+@*<script>
+    $("#kml").click(function () {
+        console.log($("#kml2").val());
+        $.ajax({
+            type: "POST",
+            url: "/Home/Kamil2",
+            data: $("#kml2").val(),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                alert(response.kamil);
+            },
+            error: function (response) {
+                alert(response.kamil);
+            }
+        });
+    });
+</script>*@

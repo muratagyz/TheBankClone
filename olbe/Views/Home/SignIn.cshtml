@@ -1,0 +1,73 @@
+﻿@model User
+<div class="container-fluid pt-5 px-5 " style="background-color: #dc0005!important;">
+    <div class="container">
+        <div class="row text-white">
+            <div class="col-12 col-md-8 pt-3" style="padding-left:0!important;">
+                <a href="/Home"><img src="~/image/logo-akbank.png" class="img-fluid" /></a>
+                <br /><br /><br />
+                <p style="font-weight:bolder;font-size:19px;"> Akbank Mobil'i hemen telefonunuza indirmek için</p>
+                <p style="font-size:15px">
+                    Cep telefonunuza göndereceğimiz SMS linkine tıklayabilir veya telefonunuzun kamerasından QR kodu okutabilirsiniz.
+                    <br /><br />
+                    İsterseniz cep telefonunuzdaki uygulama mağazasında (App Store, Google Play Store ya da App Gallery) Akbank Mobil'i aratıp kolayca Akbank Mobil'i indirebilirsiniz.
+                </p>
+            </div>
+            <div class="col-4 header-hid pt-5">
+                <img src="~/image/header-img.png" style="position: absolute; top: 76px;" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+s
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8  px-4 px-md-3">
+            <h3 class="bg-white mb-0 mt-5 kayit-ol-yazi" style=" box-shadow: 0 6px 20px -7px rgb(40 0 5 / 10%);">Giriş Yapın</h3>
+            <div class="signup-body" style=" box-shadow: 0 6px 20px -7px rgb(40 0 5 / 10%);">
+                <p>Akbank Mobil'e giriş yapabilmek için lütfen E-Posta veya TC Kimlik numaranızı ve onun yanında şifrenizi girin.</p>
+                <form method="post" asp-action="SignIn" asp-controller="Home">
+                    <div class="bapp-form-group ">
+                        <div class="bapp-form-label">
+                            <div class="bapp-label-container" style="padding:3px;">
+                                <label class="bapp-label" for="userMail">E-Mail / TC Kimlik Numaranız</label>
+                            </div>
+                        </div>
+                        <div class="bapp-form-input">
+                            <div class="bapp-input-container bapp-input-bordered">
+                                <input type="email" asp-for="userMail" placeholder="ornek5764@gmail.com" class="form-control" style="border-radius:0!important;" name="userMail">
+
+                            </div>
+                        </div>
+                        <div class="bapp-form-label mt-2">
+                            <div class="bapp-label-container" style="padding:3px;">
+                                <label class="bapp-label" for="userPassword">Şifreniz</label>
+                            </div>
+                        </div>
+                        <div class="bapp-form-input">
+                            <div class="bapp-input-container bapp-input-bordered">
+                                <input asp-for="userPassword" type="password" placeholder="Şifrenizi giriniz" size="13" class="form-control" autocomplete="off" style="border-radius:0!important;" name="userPassword">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-control btn btn-outline-success mt-3">Giriş Yap</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 col-md-4  px-4 px-md-2">
+            <div class="signup-body-right mt-5" style=" box-shadow: 0 6px 20px -7px rgb(40 0 5 / 10%);">
+                <div class="advantage-inner text-center">
+                    <h2 class="text-center signup-body-card2-header">
+                        İstediğin yerden
+                        <br>
+                        istediğin zaman
+                        <br>
+                        <strong>Mobilden Akbanklı ol!</strong>
+                    </h2>
+                    <p>Akbank Mobil'den 'Akbanklı Olmak İstiyorum' adımlarını takip ederek şubeye gitmeden dakikalar içinde müşterimiz olabilirsiniz.</p>
+                    <p class="form-text-strong fw-bold">Sizi bekleyen avantajlardan da 1 yıl boyunca faydalanabilirsiniz!</p>
+                    <img class="landing-header-img" src="~/image/kolay-adres.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

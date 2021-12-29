@@ -1,0 +1,33 @@
+﻿@section NavbarTop {
+    @await Html.PartialAsync("_NavbarTop")
+}
+@section Navbar {
+    @await Html.PartialAsync("_Navbar")
+}
+
+@await Html.PartialAsync("_Jumbotron")
+@await Html.PartialAsync("_Carousel_Desktop")
+@await Html.PartialAsync("_Login_Button_Mobile")
+@await Html.PartialAsync("_Carousel_Mobile")
+@await Html.PartialAsync("_Currency")
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-0 mt-4">
+            <div class="panel-header">
+                <h5 style="font-weight: 300 !important; padding: 15px !important; margin: 0!important;">Akbank Yatırım Hizmetleri</h5>
+                <div class="panel-body" style="background-image: url('/image/panel-img.png') !important;padding:0!important;">
+                    <p class="p-3 w-60 pb-5" style="font-size:16px!important;color:white!important;font-weight:300;">
+                        Yatırım hakkında tek bilmeniz gereken: Akbank Yatırım Hizmetleri! <br /><br />
+                        Yatırımlarınıza Akbank, Ak Yatırım ve Ak Portföy’ün bir araya geldiği Akbank Yatırım Hizmetleri ile yön verin.
+                    </p>
+                </div>
+                <div class="panel-footer text-center">
+                    <button class="panel-button mb-3 p-3">Detaylı Bilgi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Footer {
+    @await Html.PartialAsync("_Footer")
+}

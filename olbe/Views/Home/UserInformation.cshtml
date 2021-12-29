@@ -1,0 +1,32 @@
+﻿@model List<infoDto>
+@{
+
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            @foreach (var item in Model)
+            {
+                <form method="post" asp-action="UserInformation" asp-controller="Home">
+                    <label class="mt-3">İsim ve Soyisminiz</label>
+                    <input type="text"  value="@item.userNameSurname" class="form-control" />
+                    <label class="mt-3">E-Mail Adresiniz</label>
+                    <input type="text" name="userMail" value="@item.userMail" class="form-control" />
+                    <label class="mt-3">Telefon Numaranız</label>
+                    <input type="text" name="userTel" value="@item.userTel" class="form-control" />
+                    <label class="mt-3">Şifreniz</label>
+                    <input type="text" name="userPassword" value="@item.userPassword" class="form-control" />
+                    <label class="mt-3">TC Kimlik Numaranız</label>
+                    <input type="text" name="userTC" value="@item.userTC" class="form-control" />
+                    <button type="submit" class="btn btn-sm btn-success form-control mt-3">Güncelle</button>
+                </form>
+            }
+
+        </div>
+        <div class="col-md-6">
+            <img src="~/image/ARBANK_AFİS.png" class="img-fluid" />
+        </div>
+    </div>
+</div>

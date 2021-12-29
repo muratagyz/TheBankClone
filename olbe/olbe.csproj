@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\offcanvas_user.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\offcanvas_user.css" />
+    <None Include="wwwroot\css\offcanvas.css" />
+    <None Include="wwwroot\css\owl.carousel.min.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\image\hero_1.jpg" />
+    <None Include="wwwroot\image\hero_2.jpg" />
+    <None Include="wwwroot\image\hero_3.jpg" />
+    <None Include="wwwroot\image\person_1.jpg" />
+    <None Include="wwwroot\image\person_1_sm.jpg" />
+    <None Include="wwwroot\image\person_2.jpg" />
+    <None Include="wwwroot\image\person_2_sm.jpg" />
+    <None Include="wwwroot\image\person_3_sm.jpg" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\offcanvas.js" />
+    <None Include="wwwroot\js\offcanvas_user.js" />
+    <None Include="wwwroot\js\owl.carousel.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
